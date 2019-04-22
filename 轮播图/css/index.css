@@ -1,0 +1,420 @@
+/*
+* @Author: dhl
+* @Date:   2018-07-05 10:53:55
+* @Last Modified by:   dhl
+* @Last Modified time: 2018-07-08 11:27:02
+*/
+/* 广告区域大背景 */
+.a_bg {
+	width: 100%;
+	height: 470px;
+
+	/* 让元素脱标不占位置 */
+	position: absolute;
+}
+.a_bg a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url("../uploads/jd_bg.png") no-repeat center top;
+}
+
+
+
+
+.m_banner {
+	height: 465px;
+}
+
+.l_banner_img {
+	margin-top: 8px;
+	margin-left: 216px;
+	position: relative;
+}
+
+.btns span{
+	width: 30px;
+	height: 60px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	background-color: rgba(0,0,0,.5);
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	font-family: "宋体";
+}
+
+.right_span {
+	right: 0;
+}
+
+.dotteds {
+	width: 110px;
+	height: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -55px;
+    bottom: 10px;
+}
+
+.dotteds li {
+	 width: 8px;
+	 height: 8px;
+	 border: 1px solid #ccc;
+	 border-radius: 50%;
+	 float: left;
+	 margin-right: 3px;
+}
+
+
+/* 新闻列表 */
+.news_list {
+	width: 252px;
+	height: 455px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 8px;
+}
+
+.top_news {
+	height: 159px;
+	border-bottom: 1px solid #ccc;
+}
+
+.top_title_news {
+	height: 31px;
+	border-bottom: 1px dashed #ccc;
+	line-height: 31px;
+	padding: 0px 10px;
+}
+.top_title_news h4{
+	float: left;
+}
+
+.top_title_news  a {
+	float: right;
+}
+
+.news_contengt {
+	padding-top: 10px;
+	padding-left: 18px;
+}
+.news_contengt li {
+	height: 22px;
+}
+
+/* 服务列表 */
+.service_list {
+
+	/* 相对父元素的宽和高度 */
+	width: 100%;
+	height: 214px;
+
+}
+.service_list  ul {
+
+	width: 252px;
+
+}
+
+
+.service_list li {
+	float: left;
+	height: 70px;
+	width: 62px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.service_list li  a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	padding-top: 48px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.Icon_bg {
+	width: 26px;
+	height: 26px;
+	display: block;
+	background: url("../img/icons.png") no-repeat -17px -16px;
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	margin-left: -13px;
+}
+
+.service_list li:nth-child(2) i {
+	background-position: -17px -87px;
+}
+
+.service_list li:nth-child(3) i {
+	background-position: -17px -160px;
+}
+
+.news_list>a {
+	display: block;
+	/* 行内元素不能直接设置上下内外边距，如果要设置，需要模式转换 */
+	margin-top: 5px;
+}
+
+
+/* 今日推荐 */
+.recommend {
+	height: 163px;
+	background-color: #ebebeb;
+	/* background-color: pink; */
+	margin-top: 16px;
+	margin-bottom: 24px;
+
+	overflow: hidden;
+}
+
+.recommend li {
+	float: left;
+}
+
+.recommend  li:first-child {
+	 width: 196px;
+	 height: 163px;
+	 background-color: #604f4d;
+	 text-align: center;
+	 padding-top: 105px;
+	 box-sizing: border-box;
+	 color: #fff;
+	 font-size: 20px;
+	 font-weight: 700;
+	 position: relative;
+}
+
+.recommend  li:first-child::before {
+	content: "";
+	width: 58px;
+	height: 58px;
+	display: block;
+	background: url("../img/clock.png") no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 30px;
+	margin-left: -29px;
+}
+
+.recommend  .public {
+	 width: 249px;
+	 height: 143px;
+	 display: block;
+	 border-right: 1px solid #ccc;
+	 margin-top: 12px;
+	 box-sizing: border-box;
+}
+
+.recommend  li:last-child .public {
+	border-right: 0 none;
+	width: 246px;
+}
+
+/* 商品列表 */
+.products_list .top_list {
+	margin-bottom: 10px;
+}
+.products_list .top_list li {
+	float: left;
+
+}
+
+.products_list .top_list li:nth-child(even) {
+	 width: 1px;
+	 height: 14px;
+	 background-color: #ccc;
+	 margin: 0px 10px;
+	 margin-top: 3px;
+}
+
+
+.bot_list {
+	height: 360px;
+	border-top: 2px solid red;
+	border-right: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.left_div {
+	float: left;
+	width: 198px;
+	height: 360px;
+}
+
+.left_div .lists_item {
+	margin: 12px 20px 15px 5px;
+}
+
+
+.left_div .lists_item  li {
+	float: left;
+	width: 80px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	margin-right: 5px;
+}
+
+
+.left_div>a {
+	display: block;
+	margin-top: 55px;
+}
+
+.left3_div {
+	width: 221px;
+	height: 100%;
+	border-right: 1px solid red;
+}
+.left3_div a:first-child {
+	display: block;
+	height: 180px;
+	border-bottom: 1px solid red;
+}
+
+
+.left4_div {
+	width: 220px;
+	height: 100%;
+	border-right: 1px solid red;
+}
+
+.left5_div a{
+   display: block;
+}
+/* 回到顶部 */
+.toTop {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #604f4d;
+	color:white;
+	bottom: 20px;
+	right: 0px;
+	font:bold 20px/50px '宋体';
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	display: none;
+
+}
+.toTop::after {
+	content: '顶部';
+	font:normal 14px/50px '宋体';
+	position: absolute;
+	top:0;
+	right:-60px;
+	width:60px;
+	height: 50px;;
+	background: #604f4d;
+	transition: right 0.2s;
+}
+.toTop span {
+	position: absolute;
+	z-index: 999;
+	height: 50px;
+	width: 50px;
+	left:0;
+	top:0;
+	transform: rotateZ(-90deg);
+	background: #604f4d;
+}
+.toTop:hover span{
+	background: red;
+}
+.toTop:hover::after{
+	right: 50px;
+	background: red;
+}
+
+/* 轮播图样式 */
+.banenr-center {
+	width: 720px;
+	height: 454px;
+	float: left;
+	margin-left: 213px;
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.banenr-center img {
+	width: 720px;
+	height: 454px;
+}
+/* 轮播项容器 */
+.banenr-center .content {
+	width: 2880px;
+	height: 454px;
+	position: absolute;
+}
+.banenr-center .content .item {
+	float: left;
+}
+/* 左右按钮 */
+.banenr-center .btn {
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	background:rgba(41, 34, 34, 0.4);
+	text-align: center;
+	font:bold 18px/50px '宋体';
+	color: #fff;
+	display: none;
+}
+.banenr-center .btn-right {
+	right: 0;
+}
+.banenr-center:hover .btn {
+	display: block;
+}
+/* 小点样式 */
+.banenr-center li {
+	width: 8px;
+	height: 8px;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	
+}
+.banenr-center li:first-child {
+	margin-left: 0;
+}
+.banenr-center li::after {
+	width: 16px;
+	height: 16px;
+	background: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	border-radius: 50%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	content: '';
+	display: none;
+}
+.banenr-center li.active {
+	background: #fff;
+}
+.banenr-center li.active::after {
+	display: block;
+}
+.banenr-center ul {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+

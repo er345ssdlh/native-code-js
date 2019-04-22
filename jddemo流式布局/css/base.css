@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    background-color: #ddd;
+    font-family: Arial, "宋体";
+    font-size: 12px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}

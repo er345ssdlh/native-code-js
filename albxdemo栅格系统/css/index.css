@@ -1,0 +1,81 @@
+.container {
+  height: 100px;
+}
+.container .left {
+  background-color: #ccc;
+  padding: 0;
+}
+.container .left img {
+  width: 100%;
+  background-color: aquamarine;
+}
+.container .left ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.container .left ul li a:hover {
+  background-color: orange;
+}
+.container .conter .top .to-le {
+  padding: 0;
+}
+.container .conter .top .to-le img {
+  width: 100%;
+  padding: 0 5px 0;
+}
+.container .conter .top .to-ri {
+  padding: 0;
+}
+.container .conter .top .to-ri .to {
+  padding: 0;
+}
+.container .conter .top .to-ri .to img {
+  padding: 0;
+  padding: 0 5px 5px;
+}
+.container .conter .top .to-ri .bo {
+  padding: 0;
+}
+.container .conter .top .to-ri .bo img {
+  padding: 0;
+  padding: 0 5px 0;
+}
+.container .conter .bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #666;
+}
+.container .conter .bottom img {
+  margin-top: 10px;
+  padding: 0;
+}
+.container .right {
+  padding: 0;
+}
+.container .right img {
+  width: 100%;
+}
+.container .right .foot {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+.container .right .foot p:nth-child(1) {
+  font-size: 20px;
+  color: hotpink;
+}
+@media screen and (max-width: 768px) {
+  .conter .bottom img {
+    display: none;
+  }
+  .left ul {
+    display: flex;
+  }
+  .left ul li {
+    flex: 1;
+    padding: 0;
+    text-align: center;
+  }
+}

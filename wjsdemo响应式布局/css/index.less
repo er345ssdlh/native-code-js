@@ -1,0 +1,419 @@
+.pub(@w) {
+    width: @w;
+    margin: 0 auto;
+}
+
+.main {
+    .pub(980px);
+}
+
+// 导航部分
+.top {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+
+    .main {
+        height: 60px;
+        line-height: 60px;
+
+        .ydd {
+            display: none;
+        }
+
+        li {
+            float: left;
+            height: 60px;
+
+        }
+
+        a {
+            display: block;
+            padding: 0 30px;
+
+            border-right: 1px solid #ccc;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        li:nth-child(4) a {
+            border-right: 0;
+            display: inline-block;
+        }
+
+        li:nth-child(4) a:nth-child(1) {
+            line-height: 1;
+            padding: 8px;
+            background-color: red;
+            border-radius: 5px;
+            color: #fff;
+            margin-left: 30px;
+        }
+    }
+}
+
+// 维金部分
+.wj {
+    background-color: #fff;
+    height: 60px;
+    line-height: 60px;
+
+    li {
+        float: left;
+
+        img {
+            height: 40px;
+        }
+
+        a {
+            display: block;
+            padding: 0 20px;
+        }
+
+        a:hover {
+            color: orange;
+        }
+    }
+
+    li:last-child {
+        float: right;
+    }
+}
+
+// banner  部分
+.ban {
+    img {
+        width: 100%;
+    }
+}
+
+// 口号部分
+.kh {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+
+        dl {
+            padding-top: 10px;
+
+            dt {
+                font-size: 20px;
+                color: #555;
+                line-height: 60px;
+                font-weight: bold;
+            }
+
+            dd {
+                line-height: 40px;
+                color: #777;
+            }
+        }
+    }
+}
+
+// 数字部分
+.num {
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+
+    .main {
+        padding-top: 10px;
+
+        p {
+            line-height: 30px;
+            color: #777;
+
+            span {
+                color: orange;
+            }
+
+            .aaa {
+                color: orange;
+            }
+
+            .aa {
+                color: green;
+            }
+        }
+    }
+}
+
+// 特别推荐  部分
+.tj {
+    .main {
+        border-bottom: 1px solid #aaa;
+
+        ul {
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    padding: 0 10px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+
+                a:hover {
+                    color: red;
+                    border-bottom: 2px solid orange;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
+
+// 解释 部分
+.js {
+    .main {
+        position: relative;
+
+        p {
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 7px;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            color: #777;
+        }
+
+        p::after {
+            // 在这里是使用伪元素
+            content: "";
+            display: block;
+            border: 8px solid transparent;
+            border-bottom-color: #fff;
+            position: absolute;
+            top: -16px;
+            left: 30px;
+        }
+    }
+}
+
+// 代金券部分
+.djj {
+    margin-top: 20px;
+    .main {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .item {
+            width: 33%;
+            height: 160px;
+            background-color: red;
+            margin-bottom: 8px;
+            display: flex;
+            border-radius: 10px;
+            .dj-le {
+                flex: 1;
+                padding: 10px;
+                p:nth-child(1){
+                    color: #fff;
+                    font-size: 18px;
+                    height: 28px;
+                }
+                p:nth-child(2){
+                    color: #aaa;
+                    font-size: 14px;
+                    height: 28px;
+                }
+                p:nth-child(3){
+                    color: #fff;
+                    font-size: 18px;
+                    height: 28px;
+                }
+                p:nth-child(4){
+                    color: #aaa;
+                    font-size: 14px;
+                    height: 28px;
+                }
+                 p:nth-child(5){
+                    color: #fff;
+                    font-size: 18px;
+                    height: 28px;
+                }
+                p{
+                    span{
+                        float: right;
+                    }
+                }
+            }
+            .dj-ri {
+                width: 100px;
+                height: 100%;
+                border-left: 1px dashed #fff;
+                position: relative;
+                padding: 10px;
+                box-sizing: border-box;
+                text-align: center;
+                h5{
+                    
+                    font-size: 24px;
+                    height: 80px;
+                    line-height: 80px;
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+            .dj-ri::before{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                background-color: #fff;
+                position: absolute;
+                left: -10px;
+                top: -10px;
+            }
+            .dj-ri::after{
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                background-color: #fff;
+                position: absolute;
+                left: -10px;
+                bottom: -10px;
+            }
+        }
+    }
+    .main::after {
+        content: "";
+        display: block;
+        width: 33%;
+        height: 200px;
+        background-color: pink;
+        margin-bottom: 8px;
+        visibility: hidden;
+    }
+}
+
+
+// 平板 设备
+
+@media only screen and (max-width:980px) {
+    .main {
+        .pub(780px);
+    }
+
+    // 导航部分
+    .top {
+        .main {
+            li:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+
+
+    // 微金所 部分
+    .wj {
+        li:last-child {
+            display: none;
+        }
+    }
+    // 代金券部分
+    .djj{
+        .main{
+            .item{
+                width: 49%;
+            }
+        }
+    }
+
+}
+
+
+
+//手机移动设备
+
+@media only screen and (max-width:680px) and(min-width:320px) {
+    .main {
+        .pub(100%);
+    }
+
+    // 导航部分
+    .top {
+        .main {
+
+            .ydd {
+                // 注意权重！！！！
+                display: block;
+
+                a {
+                    border: 0;
+                }
+
+                a:nth-child(1) {
+                    float: left;
+                }
+
+                a:nth-child(2) {
+                    float: right;
+                    margin-right: 10px;
+                }
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    // 微金所 部分
+    .wj {
+        display: none;
+    }
+
+    // 口号部分
+    .kh {
+        display: none;
+    }
+
+    // 数字部分
+    .num {
+        padding-top: 20px;
+
+        .main {
+            p {
+                // 超出用省略号显示
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+        }
+
+    }
+
+    // 特别推荐  部分
+    .tj {
+        .main {
+            overflow-x: auto;
+
+            ul {
+                width: 540px;
+            }
+        }
+    }
+    // 代金券部分
+    .djj{
+        .main{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+}

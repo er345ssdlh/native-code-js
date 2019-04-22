@@ -1,0 +1,238 @@
+/* 最大宽度和最小宽度的设置 */
+.main {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+}
+/* 顶部搜索模块样式 */
+.top-search {
+  height: 40px;
+  background: red;
+  padding: 0 70px;
+  position: fixed;
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  box-sizing: border-box;
+  z-index:999;
+
+}
+.top-search input {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 15px;
+  padding-left:40px;
+  box-sizing: border-box;
+}
+.top-search .logo {
+  width: 55px;
+  height: 20px;
+  background: url(../img/jd-sprites.png) no-repeat 0 -110px;
+  background-size: 200px 200px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+.top-search .login {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+/* banner模块样式 */
+.banner {
+  padding-top: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+}
+.banner ul {
+  width: 600%;
+  display: flex;
+  position: relative;
+  left: -100%;
+}
+.banner .controls {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner .item {
+  width: 5px;
+  height: 5px;
+  border:1px solid #ccc;
+  float: left;
+  border-radius: 50%;
+}
+.banner .item+.item {
+  margin-left:10px;
+}
+.banner .item.active {
+  background: #fff;
+}
+
+/* 导航模块样式 */
+nav {
+  background: #fff;
+  padding-bottom: 10px;
+}
+nav li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 10px;
+}
+nav li img {
+  width: 50%;
+}
+nav li span {
+  display: block;
+}
+
+/* 掌上秒杀模块-标题 */
+.seconds-kill {
+  padding-top: 5px;
+}
+.seconds-kill .title {
+  height: 35px;
+  background: #fff;
+  line-height: 35px;
+}
+.seconds-kill .title .fl h4{
+  float: left;
+  color: red;
+  padding-left: 40px;
+}
+.seconds-kill .title .fl .time{
+  float: left;
+  margin-left: 15px;
+}
+.seconds-kill .title .fl .time span {
+  background: #000;
+  color: #fff;
+}
+.seconds-kill .title .fl .time .line {
+  background: #fff;
+  color: #000;
+}
+.seconds-kill .title .fr a{
+  padding-right: 30px;
+}
+/* 掌上秒杀模块-内容 */
+.seconds-kill .content  {
+  background: #fff;
+}
+.seconds-kill .content li {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.seconds-kill .content li  img {
+  width: 100%;
+}
+.seconds-kill .content li strong {
+  color: red;
+  display: block;
+}
+.seconds-kill .content li i {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  width: 40px;
+  height: 40px;
+  background: gold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+}
+/* 亿万神券模块样式 */
+.ticket  {
+  position: relative;
+}
+.ticket .bg {
+  width: 100%;
+}
+.ticket ul {
+  position: absolute;
+  top: 25%;
+}
+.ticket li {
+  width: 50%;
+}
+.ticket li img {
+  width: 100%;
+}
+/* 猜你喜欢 */
+.likes {
+  background: #fff;
+}
+.likes .content li {
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.likes .content li img{
+  width: 100%;
+}
+.likes .content li .top a {
+  border-bottom: 2px solid #666;
+  display: block;
+}
+.likes .content li .top p {
+  height: 40px;
+    /* 设置超出部分的显示方式 */
+	overflow: hidden;
+	/* 在文字末尾换行 */
+	word-break: break-all;
+	/* 文字溢出显示省略号 */
+	text-overflow: ellipsis;
+
+	/* 用来控制显示行数 */
+	-webkit-line-clamp: 2;
+	/* 文字显示方式,默认水平 */
+	-webkit-box-orient: vertical;
+	/* 将盒子转为弹性盒子 */
+	display: -webkit-box;
+}
+.likes .content li .bottom span {
+  float: left;
+  color: red;
+}
+.likes .content li .bottom a {
+  float: right;
+}
+
+/* 底部模块 */
+.footer {
+  position: fixed;
+  height: 50px;
+  background: #fff;
+  width: 100%;
+  bottom: 0;
+  max-width: 640px;
+  min-width: 320px;
+}
+.footer a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 50px;
+}
+.footer a img {
+  height: 100%;
+}

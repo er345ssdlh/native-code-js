@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="../lib/jquery-1.12.4.js"></script>
+  <script>
+    //入口函数  等DOM树加载完毕后执行
+    $(function () {
+      //切换效果
+      $("li").mouseenter(function () {
+        $(this).addClass("active").siblings().removeClass();
+        $(".top").children().attr("src", "img/" + $(this).children().attr("msrc"));
+        $(".rightBox").children().attr("src", "img/" + $(this).children().attr("bsrc"));
+      })
+
+      // 放大镜效果
+      //进去
+      $(".top").mouseenter(function (e) {
+        $(".yellow").css("display", "block");
+        $(".rightBox").css("display", "block");
+      })
+
+      $(".top").mousemove(function (e) {
+
+        //小黄处理
+        var x = e.pageX;
+        var y = e.pageY;
+        // console.log(x, y);
+
+        var zbj = x - $(this).offset().left - $(".yellow").outerWidth() / 2;
+        var sbj = y - $(this).offset().top - $(".yellow").outerHeight() / 2;
+        // console.log(zbj, sbj);
+        $(".yellow").css("left", zbj);
+        $(".yellow").css("top", sbj);
+
+        if (zbj <= 0) {
+          $(".yellow").css("left", 0);
+        }
+        if (sbj <= 0) {
+          $(".yellow").css("top", 0);
+        }
+        if (zbj >= $(".top").outerWidth() - $(".yellow").outerWidth()) {
+          $(".yellow").css("left", $(".top").outerWidth() - $(".yellow").outerWidth());
+        }
+        if (sbj >= $(".top").outerHeight() - $(".yellow").outerHeight()) {
+          $(".yellow").css("top", $(".top").outerHeight() - $(".yellow").outerHeight());
+        }
+
+        //大图处理
+         $(".rightBox").css("position","relative");
+         $(".rightBox img").css("position","absolute");
+         $(".rightBox img").css("left",-zbj*1.3);
+         $(".rightBox img").css("top",-sbj*1.3);
+
+
+      })
+
+      //出来
+      $(".top").mouseleave(function () {
+        $(".yellow").css("display", "none");
+        $(".rightBox").css("display", "none");
+      })
+
+
+
+    })
+  </script>
+</head>
+
+<body>
+  <!--版心  -->
+  <div class="w">
+    <!-- 左侧 -->
+    <div class="leftBox">
+      <!-- 上 -->
+      <div class="top">
+        <img src="img/m1.jpg">
+        <div class="yellow"></div>
+      </div>
+      <ul>
+        <li class="active">
+          <img src="img/s1.jpg" msrc="m1.jpg" bsrc="b1.jpg">
+        </li>
+        <li>
+          <img src="img/s2.jpg" msrc="m2.jpg" bsrc="b2.jpg">
+        </li>
+        <li>
+          <img src="img/s3.jpg" msrc="m3.jpg" bsrc="b3.jpg">
+        </li>
+      </ul>
+    </div>
+    <!-- 右侧 -->
+    <div class="rightBox">
+      <img src="img/b1.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>

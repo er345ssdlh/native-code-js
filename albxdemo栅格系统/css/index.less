@@ -1,0 +1,106 @@
+.container{
+    height: 100px;
+    // 左边
+    .left{
+        background-color: #ccc;
+        padding: 0;
+        
+        img{
+            width: 100%;
+            background-color: aquamarine;
+        }
+        ul{
+            li{
+                
+                a{
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    padding-left: 20px;
+                }
+                a:hover{
+                    background-color:orange;
+                }
+            }
+        }
+    }
+    // 中间
+    .conter{
+        .top{
+            .to-le{
+                padding: 0;
+                img{
+                    width: 100%;
+                    padding: 0 5px 0;
+                }
+            }
+            .to-ri{
+                padding: 0;
+                .to{
+                    padding: 0;
+                    img{
+                        padding: 0;
+                        padding: 0 5px 5px;
+                    }
+                }
+                .bo{
+                    padding: 0;
+                    img{
+                        padding: 0;
+                        padding: 0 5px 0;
+                    }
+                }
+            }
+        }
+        .bottom{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-top: 1px solid #666;
+            .text{
+                p{
+                    
+                }
+            }
+            img{
+                margin-top: 10px;
+                padding: 0;
+            }
+        }
+    }
+    .right{
+        padding: 0;
+        img{
+            width: 100%;
+        }
+        .foot{
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            p:nth-child(1){
+                font-size: 20px;
+                color: hotpink;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .conter{
+        .bottom{
+            img{
+                display: none;
+            }
+        }
+    }
+    .left{
+        ul{
+            display: flex;
+            li{
+                flex: 1;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+}

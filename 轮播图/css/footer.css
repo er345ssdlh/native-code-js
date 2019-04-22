@@ -1,0 +1,97 @@
+/*
+* @Author: dhl
+* @Date:   2018-07-06 07:12:41
+* @Last Modified by:   dhl
+* @Last Modified time: 2018-07-06 11:57:04
+*/
+
+.footer {
+	/* margin-top: 500px; */
+	background-color: #e0dedb;
+}
+
+.top_footer {
+	height: 112px;
+	border-bottom: 1px solid #ccc;
+}
+
+.top_footer li {
+	float: left;
+	width: 230px;
+	height: 58px;
+	margin-top: 36px;
+}
+
+.ft_li {
+	margin-left: 38px;
+}
+
+.sg_bg {
+	width: 56px;
+	height: 53px;
+	display: block;
+	background: url("../img/icons.png") no-repeat -253px top;
+	float: left;
+}
+
+.text {
+	float: left;
+	margin-top: 8px;
+}
+.text  p {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.text .sm_font {
+	font-size: 12px;
+	font-weight: 400;
+}
+
+
+/* 中部盒子 */
+.middle_footer {
+	height: 168px;
+	border-bottom: 1px solid #ccc;
+}
+
+.middle_footer  dl {
+	float: left;
+	width: 194px;
+	margin-top: 20px;
+}
+
+.middle_footer .fs_dl {
+	 margin-left: 40px;
+}
+
+.middle_footer .last_dl {
+	width: 177px;
+	text-align: center;
+}
+
+.middle_footer  dt {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.middle_footer dd {
+	height: 20px;
+}
+
+
+.middle_footer .last_dl img {
+	margin: 6px 0;
+}
+
+.bot_footer {
+	text-align: center;
+	overflow: hidden;
+}
+.bot_footer p {
+	margin: 10px 0;
+}
+
+.bot_footer span {
+	margin: 0 10px;
+}

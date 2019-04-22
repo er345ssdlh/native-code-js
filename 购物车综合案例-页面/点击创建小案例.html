@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>点击</button>
+    <a href="javascript:" class="a1">清空</a>
+    <ul>
+
+    </ul>
+    <script src="./lib/jquery-1.12.4.js"></script>
+    <script>
+        var data = [{
+                name: "盖伦",
+                type: "坦克"
+            }, {
+                name: "提莫",
+                type: "法师"
+            }, {
+                name: "剑圣",
+                type: "刺客"
+            }, {
+                name: "亚索",
+                type: "战士"
+            }, {
+                name: "EZ",
+                type: "射手"
+            }, {
+                name: "皮城女警",
+                type: "射手"
+            }, {
+                name: "寒冰射手",
+                type: "射手"
+            }, {
+                name: "波比",
+                type: "坦克",
+            }, {
+                name: "赵信",
+                type: "刺客"
+            },
+            {
+                name: "塔姆",
+                type: "坦克"
+            },
+        ]
+        $("button").click(function () {
+            for (var i = 0; i < data.length; i++) {
+                var newli = $("<li></li>");
+                newli.html(`
+                <span>${data[i].name}</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:" class="del">删除</a>
+                `);
+                $(newli).appendTo('ul');
+            }
+            $(".del").click(function () {
+                $(this).parent().remove();
+            });
+        });
+
+
+
+        $(".a1").click(function () {
+            $("ul").children().remove();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+/*
+* @Author: dhl
+* @Date:   2018-07-05 10:53:33
+* @Last Modified by:   dhl
+* @Last Modified time: 2018-07-08 11:55:20
+*/
+.header {
+}
+
+.banner {
+	height: 80px;
+	background-color: #000;
+}
+
+.banner .w {
+	position: relative;
+}
+
+.close {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	display: block;
+	background-color: #807d78;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 10px;
+	/* 设置鼠标样式 */
+	cursor: pointer;
+}
+
+/* 顶部导航 */
+.top_nav {
+	height: 31px;
+	line-height: 31px;
+	background-color: #e5e5e3;
+	border-bottom: 1px solid #e0dedb;
+}
+
+
+.r_list li {
+	padding: 0 10px;
+}
+
+.r_list  .code  {
+	 width: 70px;
+	 height: 70px;
+	 display: block;
+	 position: absolute;
+}
+.r_list  .code::before {
+	 content: "";
+	 width: 0px;
+	 height: 0px;
+	 border-left: 5px solid transparent;
+	 border-right: 5px solid transparent;
+	 border-top: 5px solid transparent;
+	 border-bottom: 5px solid #fff;
+	 display: block;
+	 position: absolute;
+	 left: 50%;
+	 margin-left: -5px;
+	 top: -10px;
+}
+.r_list  .code  img {
+	width: 100%;
+	height: 100%;
+}
+
+.r_list .line {
+	width: 1px;
+	height: 12px;
+	background-color: #d0cdc7;
+	padding: 0;
+	margin-top: 10px;
+}
+
+/* logo区域开始 */
+.m_logo {
+	height: 105px;
+}
+
+.l_logo {
+	margin-top: 26px;
+}
+
+.searchBox {
+	width: 510px;
+	height: 60px;
+	margin-top: 26px;
+	margin-left: 112px;
+}
+
+.search {
+	width: 508px;
+	height: 32px;
+	border: 1px solid #ff0000;
+	position: relative;
+}
+
+.search .search_box {
+	height: 32px;
+	width: 435px;
+	padding-left: 10px;
+	float: left;
+}
+
+.search .btn {
+	width: 63px;
+	height: 32px;
+	background-color: #ff0000;
+	float: left;
+}
+
+.icon-sousuo {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #fff;
+}
+
+
+.searchBox li {
+	float: left;
+	margin-top: 6px;
+	margin-right: 12px;
+	font-size: 12px;
+}
+
+.searchBox .last_li {
+	margin-right: 0;
+}
+
+
+/* 购物车 */
+.chart {
+	margin-top: 26px;
+	margin-right: 130px;
+	width: 188px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.icon-gouwuche {
+	color: red;
+}
+
+.number {
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	display: block;
+	background-color: red;
+	text-align: center;
+	color: #fff;
+	border-radius: 7px 7px 7px 0px;
+	position: absolute;
+	right: 20px;
+	top: -10px;
+}
+
+
+/* 主体导航 */
+.m_nav {
+	height: 45px;
+	border-bottom: 2px solid #ca0000;
+}
+
+
+.products {
+	width: 210px;
+	height: 45px;
+	background-color: #ca0000;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	position: relative;
+	z-index: 10;
+}
+
+.products h4 {
+	color: #fff;
+	font-size: 16px;
+}
+
+
+.P_content {
+	text-align: left;
+	height: 437px;
+	background-color: #e20000;
+	line-height: 1;
+	padding: 14px;
+}
+
+.P_content  li {
+	height: 30px;
+	color: #fff;
+}
+
+.P_content  li a {
+	color: #fff;
+	float: left;
+}
+
+.P_content  li:hover a {
+	color: pink;
+}
+
+.P_content  li span {
+	font-family: "宋体";
+	float: right;
+}
+
+
+/* 导航列表 */
+.nav_list {
+	margin-left: 60px;
+	margin-top: 15px;
+}
+
+.nav_list li {
+	float: left;
+	font-size: 18px;
+	margin-right: 40px;
+
+}
+
+.nav_list li a {
+	font-weight: 700;
+}
+
+
+.nav_list  .lastli {
+	margin-right: 0;
+}

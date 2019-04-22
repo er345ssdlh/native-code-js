@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            var arr=[21345,43,1234,412,76,67,345,4,3,2,8,3,8,0,987654,23457,6,5]
+        // 趟数 从第一次开始 哪里有第零趟的
+        for(var i=1;i<=arr.length-1;i++){
+            // 每趟的次数 从第一次开始 哪里有第零次的
+            for(var j=1;j<=arr.length-i;j++){
+                if(arr[j-1]>arr[j]){
+                    var big=arr[j-1];
+                    arr[j-1]=arr[j];
+                    arr[j]=big;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
